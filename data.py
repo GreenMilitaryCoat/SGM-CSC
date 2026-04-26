@@ -44,8 +44,7 @@ def load_raw_image(name, img_size):
         return cifar100_dataset(img_size)
     elif name == 'imagenet_dogs':
         return imagenet_dogs_dataset(img_size)
-    elif name == 'imagenet10':  # 新增 imagenet10 分支
-        return imagenet10_dataset(img_size)
+
 
 def cifar100_dataset(img_size):
     norm_transform = transforms.Compose([
@@ -127,7 +126,7 @@ def cifar_dataset(img_size):
 
 
 def imagenet_dogs_dataset(img_size):
-    # 这里假设是子空间聚类常用的 15类版本
+
     norm_transform = transforms.Compose([
         transforms.Resize((img_size, img_size)),
         transforms.ToTensor(),
@@ -140,17 +139,3 @@ def imagenet_dogs_dataset(img_size):
     )
     return dataset
 
-def imagenet10_dataset(img_size):
-    """加载 imagenet10 数据集（10类ImageNet子集）"""
-    norm_transform = transforms.Compose([
-        transforms.Resize((img_size, img_size)),
-        transforms.ToTensor(),
-        transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)),
-    ])
-
-    # 请替换为你的 imagenet10 数据集路径
-    dataset = ImageFolder(
-        root="./datasets/imagenet10",
-        transform=norm_transform
-    )
-    return dataset
