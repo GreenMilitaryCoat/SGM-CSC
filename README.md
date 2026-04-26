@@ -20,3 +20,8 @@ git clone https://github.com/DMSSC-123/DeepSubspaceClustering.git
 cd DMSSC
 pip install -r requirements.txt
 
+### **2. feature extraction**
+```bash
+python feature_extract.py --dataset=cifar100
+```
+### **3. train**
