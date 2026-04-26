@@ -18,7 +18,7 @@ SGM-CSC is a novel deep subspace clustering framework designed to address the li
 ### ** Install dependencies**
 
 ```bash
-git clone https://github.com/DMSSC-123/DeepSubspaceClustering.git
+git clone https://github.com/GreenMilitaryCoat/SGM-CSC.git
 cd SGM-CSC
 pip install -r requirements.txt
 
