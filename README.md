@@ -30,5 +30,3 @@ pip install -r requirements.txt
 ### **3. Train **
 ```bash
  main.py 
-[Uploading cifar10_single_affinity_matrix.pdf…]()
-[cifar10_fusion_affinity_matrix.pdf](https://github.com/user-attachments/files/27095763/cifar10_fusion_affinity_matrix.pdf)
